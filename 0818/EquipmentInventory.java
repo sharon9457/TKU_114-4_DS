@@ -1,4 +1,3 @@
-import java.lang.reflect.Constructor;
 
 class Equipment {
     private String id;
