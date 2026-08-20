@@ -35,7 +35,7 @@ abstract class Transport{
         }
         public double calculatefare(){
             double baseFare = 150;
-            return baseFare+getdistance()*50;
+            return baseFare + getdistance()*50;
         }
     }
 public class TransportFareSystem {
