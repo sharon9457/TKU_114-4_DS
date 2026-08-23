@@ -18,8 +18,8 @@ public class GenericResultDemo {
 
         message.set("hello world!!");
         data.set(3);
-
-        System.out.println(message);
-        System.out.println(data);
+        
+        System.out.println(message.get());
+        System.out.println(data.get());
     }
 }
