@@ -19,7 +19,7 @@ public class GenericResultDemo {
         message.set("hello world!!");
         data.set(3);
         
-        System.out.println(message.get());
-        System.out.println(data.get());
+        System.out.println("message"+message.get());
+        System.out.println("data"+data.get());
     }
 }
