@@ -26,10 +26,11 @@ class TextEditorHistory{
         uStack.push(action);
         }
        private void printState(String action){
-        System.out.print(action+ "Undo Stack" + uStack+"Redo Stack"+rStack);
+        System.out.println(action + "Undo Stack:" + uStack + "Redo Stack" + rStack );
        }
        public static void mani(String[] args){
         TextEditorHistory t = new TextEditorHistory();
+        
 
         t.type("A");
          t.type("B");
