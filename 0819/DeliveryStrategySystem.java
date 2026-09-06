@@ -46,7 +46,7 @@ class OrderService{
         }
         public void salemethod(DeliveryMethod deliveryMethod){
             this.deliveryMethod = deliveryMethod;
-        }
+        }}
 
 public class DeliveryStrategySystem {
     public static void main(String[] args){
