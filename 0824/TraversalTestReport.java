@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Queue;
-public class raversalResultCollector {
+public class TraversalTestReport {
     static class TreeNode{
         String val;
         TreeNode left;
@@ -92,10 +92,26 @@ public class raversalResultCollector {
         root.left.left = new TreeNode("D");       
         printresults("leftskewed", leftskewed);
 
+        TreeNode rightskewed = new TreeNode("A");
+        root.right = new TreeNode("B");        
+        root.right.right = new TreeNode("D");       
+        printresults("rightskewed", rightskewed);
+
         TreeNode single = new TreeNode("A");
         printresults("single", single);
 
         TreeNode empty = null;
-        printresults("empty", empty);      
+        printresults("empty", empty);  
+        
+        TreeNode irregular =new TreeNode("A");
+        root.left = new TreeNode("B");
+        root.left.left = new TreeNode("D");
+        root.right = new TreeNode("C");
+        root.right.left = new TreeNode("F");
+        root.left.right = new TreeNode("E");
+       
+        root.right.right = new TreeNode("G");
+        printresults("irregular tree",  irregular);
     }    
 }
+
