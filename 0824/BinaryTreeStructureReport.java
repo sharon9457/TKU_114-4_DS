@@ -16,6 +16,7 @@ public static void printree(TreeNode root){
     System.out.println("Root"+(root == null ?"null":root.val));
     System.out.println("leaves"+getLeaves(root));
     System.out.println("size"+getsize(root));
+    
     System.out.println("leaf count"+getleafcount(root));
     System.out.println("height"+getheight(root));
 }
@@ -61,4 +62,3 @@ public static void main(String[] args){
       System.out.println("root1");
       printree(root1);
 }}
-
