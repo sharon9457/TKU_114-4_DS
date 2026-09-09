@@ -27,6 +27,44 @@ public class MetroTransferPath {
                     queue.offer(next);
                 }
         }
+    
+    if(!visited.contains(target)){
+        return List.of();
     }
-    if(!visi)
+    List<String>path = new ArrayList<>();
+    for(String node = target;node != null;node = previous.get(node)){
+        path.add(node);
+    }
+    Collections.reverse(path);
+    return path;
 }
+public static void main(String[] args) {
+    Map<String,List<String>>graph = new HashMap<>();
+    graph.put("a",List.of("b","c"));
+    graph.put("b",List.of("c","d"));
+    graph.put("c",List.of("e","f"));
+
+    graph.put("d",List.of());
+    graph.put("e",List.of());
+    graph.put("f",List.of());
+
+    String start = "a";
+    String target ="f";
+
+    List<String> path = shortesdPath(graph, start, target);
+    System.out.println(start+"->"+target);
+    System.out.println("最短路徑:"+String.join("->",path));
+
+    if(!path.isEmpty()){
+        int count = path.size()-1;
+        System.out.println("邊數:"+count);
+    }
+    else{
+        System.out.println("false");
+    }
+
+    int edgcount = path.size()-1;
+    System.out.println("邊數"+edgcount);
+}
+}
+
