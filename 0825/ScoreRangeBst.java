@@ -52,7 +52,7 @@ public class ScoreRangeBst {
         Node root = null;
         root = insert(root, 98, "001",  "chita");
         root = insert(root, 68, "003",  "nokori");
-        root = insert(root, 67, "002",  "kai");
+        root = insert(root, 90, "002",  "kai");
         root = insert(root, 56, "007",  "petter");
         root = insert(root,  98, "005", "nyrfier");    
         printScoreRangge(root, 80,100);  
